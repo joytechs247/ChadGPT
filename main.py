@@ -197,13 +197,15 @@ app = Flask(__name__)
 @app.route('/', methods=['GET', 'POST'])
 def process_sentence():
     if request.method == 'POST':
-        # Retrieve the sentence from form data
         sentence = request.form.get('sentence', '')
         if sentence:
             response = check_and_call(sentence)
-            return render_template('index.html', response=response)
-    # For GET request or if no sentence provided, show the form
-    return render_template('index.html', response=None)
+            return render_template('response.html', response=response)
+        else:
+            return render_template('index.html', error="Please provide a sentence.")
+    else:
+        # For a GET request, just display the form
+        return render_template('index.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
