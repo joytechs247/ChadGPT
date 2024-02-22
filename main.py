@@ -11,126 +11,105 @@
 # 10)Vite: https://vitejs.dev/guide/
 
 
-from bs4 import BeautifulSoup
-import requests
 
-def Javascript():
-        try:
-            source = requests.get('https://developer.mozilla.org/en-US/docs/Web/JavaScript').text
+
+# def Javascript():
+        
+#             source = requests.get('https://developer.mozilla.org/en-US/docs/Web/JavaScript').text
             
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('article', class_='main-page-content').text
-            print(data)
-
-        except Exception as e:
-            print(e)    
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('article', class_='main-page-content').text
+#             return data
+   
 
 
 
 
-def React():
-        try:
-            source = requests.get('https://react.dev/reference/react').text
+# def React():
+        
+#             source = requests.get('https://react.dev/reference/react').text
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('article', class_='font-normal break-words text-primary dark:text-primary-dark').text
+#             return data
+
+      
+
+
+
+# def Node():
+        
+#             source = requests.get('https://nodejs.org/docs/latest/api/documentation.html').text
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('div', id='apicontent').text
+#             return data
+
+      
+
+# def NPM():
+        
+#             source = requests.get('https://docs.npmjs.com/about-npm').text
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('main', class_='Box-sc-g0xbh4-0 jrNUvm').text
+#             return data
+
+       
+
+
+# def Mongoose():
+        
+#             source = requests.get('https://mongoosejs.com/docs/guide.html').text
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('div', class_='container').text
+#             return data
+
+       
+
+# def Express():
+        
+#             source = requests.get('https://expressjs.com/en/starter/installing.html').text
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('div', id='page-doc').text
+#             return data
+
+      
+
+# def Next():
+        
+#             source = requests.get('https://nextjs.org/docs').text
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('div', class_='prose prose-vercel max-w-none').text
+#             return data
+
+       
+
+# def Axios():
+        
+#             source = requests.get('https://axios-http.com/docs/intro').text
             
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('article', class_='font-normal break-words text-primary dark:text-primary-dark').text
-            print(data)
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('div', class_='body').text
+#             return data
 
-        except Exception as e:
-            print(e)
-
+        
 
 
-def Node():
-        try:
-            source = requests.get('https://nodejs.org/docs/latest/api/documentation.html').text
-            
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('div', id='apicontent').text
-            print(data)
-
-        except Exception as e:
-            print(e)
-
-def NPM():
-        try:
-            source = requests.get('https://docs.npmjs.com/about-npm').text
-            
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('main', class_='Box-sc-g0xbh4-0 jrNUvm').text
-            print(data)
-
-        except Exception as e:
-            print(e)
+# def TailwindCSS():
+        
+#             source = requests.get('https://tailwindcss.com/docs').text
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('main', class_='max-w-3xl mx-auto relative z-20 pt-10 xl:max-w-none').text
+#             return data
+        
 
 
-def Mongoose():
-        try:
-            source = requests.get('https://mongoosejs.com/docs/guide.html').text
-            
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('div', class_='container').text
-            print(data)
+# def Vite():
+        
+#             source = requests.get('https://vitejs.dev/guide/').text
+#             soup = BeautifulSoup(source, 'html.parser')
+#             data = soup.find('div', class_='content-container').text
+#             return data
 
-        except Exception as e:
-            print(e)
-
-def Express():
-        try:
-            source = requests.get('https://expressjs.com/en/starter/installing.html').text
-            
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('div', id='page-doc').text
-            print(data)
-
-        except Exception as e:
-            print(e)
-
-def Next():
-        try:
-            source = requests.get('https://nextjs.org/docs').text
-            
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('div', class_='prose prose-vercel max-w-none').text
-            print(data)
-
-        except Exception as e:
-            print(e)
-
-def Axios():
-        try:
-            source = requests.get('https://axios-http.com/docs/intro').text
-            
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('div', class_='body').text
-            print(data)
-
-        except Exception as e:
-            print(e)
-
-
-def TailwindCSS():
-        try:
-            source = requests.get('https://tailwindcss.com/docs').text
-            
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('main', class_='max-w-3xl mx-auto relative z-20 pt-10 xl:max-w-none').text
-            print(data)
-
-        except Exception as e:
-            print(e)
-
-
-def Vite():
-        try:
-            source = requests.get('https://vitejs.dev/guide/').text
-            
-            soup = BeautifulSoup(source, 'html.parser')
-            data = soup.find('div', class_='content-container').text
-            print(data)
-
-        except Exception as e:
-            print(e)
+       
 
 
 
@@ -138,42 +117,100 @@ def Vite():
 
 def check_and_call(sentence):
     if "javascript" in sentence.lower():
-        Javascript()
+        source = requests.get('https://developer.mozilla.org/en-US/docs/Web/JavaScript').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('article', class_='main-page-content').text
+        return data
 
     elif "react" in sentence.lower():   
-        React() 
+        source = requests.get('https://react.dev/reference/react').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('article', class_='font-normal break-words text-primary dark:text-primary-dark').text
+        return data 
+    
     elif "node" in sentence.lower():
-        Node()    
+        source = requests.get('https://nodejs.org/docs/latest/api/documentation.html').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('div', id='apicontent').text
+        return data    
+
     elif "npm" in sentence.lower():    
-        NPM()     
+        source = requests.get('https://docs.npmjs.com/about-npm').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('main', class_='Box-sc-g0xbh4-0 jrNUvm').text
+        return data     
+
     elif "express" in sentence.lower():
-        Express()
+        source = requests.get('https://expressjs.com/en/starter/installing.html').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('div', id='page-doc').text
+        return data
+
     elif "mongoose" in sentence.lower():
-        Mongoose()
+        source = requests.get('https://mongoosejs.com/docs/guide.html').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('div', class_='container').text
+        return data
+
     elif "next" in sentence.lower():
-        Next()
+        source = requests.get('https://nextjs.org/docs').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('div', class_='prose prose-vercel max-w-none').text
+        return data
+
     elif "axios" in sentence.lower():
-        Axios()
+        source = requests.get('https://axios-http.com/docs/intro').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('div', class_='body').text
+        return data
+
     elif "tailwind" in sentence.lower():
-        TailwindCSS()
+        source = requests.get('https://tailwindcss.com/docs').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('main', class_='max-w-3xl mx-auto relative z-20 pt-10 xl:max-w-none').text
+        return data
+
     elif "vite" in sentence.lower():
-        Vite()
+        source = requests.get('https://vitejs.dev/guide/').text
+        soup = BeautifulSoup(source, 'html.parser')
+        data = soup.find('div', class_='content-container').text
+        return data
 
     else:
         print("Sorry, I didn't understand that. Please try again.")
 
 
 
-while 1:
 
-    print("")
-    print("") 
-    prompt = input("Send a Message: ")
 
-    print("Generating response...")
-    print("")
-    print("")
-    check_and_call(prompt)
+from flask import Flask, request, render_template
+from bs4 import BeautifulSoup
+import requests
+
+
+app = Flask(__name__)
+
+
+
+
+
+@app.route('/', methods=['GET', 'POST'])
+def process_sentence():
+    if request.method == 'POST':
+        # Retrieve the sentence from form data
+        sentence = request.form.get('sentence', '')
+        if sentence:
+            response = check_and_call(sentence)
+            return render_template('index.html', response=response)
+    # For GET request or if no sentence provided, show the form
+    return render_template('index.html', response=None)
+
+if __name__ == '__main__':
+    app.run(debug=True)
+
+
+
+
      
 
 
