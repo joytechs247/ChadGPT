@@ -43,7 +43,7 @@ def React():
 
 def Node():
         try:
-            source = requests.get('https://nodejs.org/docs/latest/api/').text
+            source = requests.get('https://nodejs.org/docs/latest/api/documentation.html').text
             
             soup = BeautifulSoup(source, 'html.parser')
             data = soup.find('div', id='apicontent').text
@@ -134,39 +134,51 @@ def Vite():
 
 
 
-def call(name):
-    if name == 'Javascript':
+
+
+def check_and_call(sentence):
+    if "javascript" in sentence.lower():
         Javascript()
 
-    elif name == 'React':
-        React()
-
-    elif name == 'Node':
-        Node()
-
-    elif name == 'NPM':
-        NPM()
-
-    elif name == 'Express':
+    elif "react" in sentence.lower():   
+        React() 
+    elif "node" in sentence.lower():
+        Node()    
+    elif "npm" in sentence.lower():    
+        NPM()     
+    elif "express" in sentence.lower():
         Express()
-    elif name == 'Mongoose':
+    elif "mongoose" in sentence.lower():
         Mongoose()
-
-    elif name == 'Next':
+    elif "next" in sentence.lower():
         Next()
-
-    elif name == 'Axios':
+    elif "axios" in sentence.lower():
         Axios()
-
-    elif name == 'TailwindCSS':
+    elif "tailwind" in sentence.lower():
         TailwindCSS()
-
-    elif name == 'Vite':
+    elif "vite" in sentence.lower():
         Vite()
 
+    else:
+        print("Sorry, I didn't understand that. Please try again.")
 
 
-name = input('Enter the name of the topic: ')
-call(name)
+
+while 1:
+
+    print("")
+    print("") 
+    prompt = input("Send a Message: ")
+
+    print("Generating response...")
+    print("")
+    print("")
+    check_and_call(prompt)
+     
+
+
+
+
+
 
 
