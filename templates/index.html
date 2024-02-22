@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../static/css/main.css" />
+    <style>
+      .right2 {
+        display: none;
+      }
+    </style>
+    <title>ChadGPT 💪🏻</title>
+  </head>
+
+  <body class="bg-gray-900">
+    <div class="flex h-[100vh] text-white">
+
+      <div class="right1 w-full flex justify-center items-center flex-col">
+        <div class="text-center w-full text-4xl font-bold my-10">ChadGPT 💪🏻</div>
+        <div class="itemsrow flex py-4 w-[43vw] justify-around">
+          <div class="examples flex flex-col justify-center items-center">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <circle cx="12" cy="12" r="5"></circle>
+              <line x1="12" y1="1" x2="12" y2="3"></line>
+              <line x1="12" y1="21" x2="12" y2="23"></line>
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+              <line x1="1" y1="12" x2="3" y2="12"></line>
+              <line x1="21" y1="12" x2="23" y2="12"></line>
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+            </svg>
+            <div class="py-4"></div>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              "hi" →
+            </button>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              "help" →
+            </button>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              "sax" →
+            </button>
+          </div>
+          <div class="cap flex flex-col justify-center items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke-width="1.5"
+              stroke="currentColor"
+              aria-hidden="true"
+              class="h-6 w-6"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"
+              ></path>
+            </svg>
+            <div class="py-4"></div>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              hum pe to hai he 9
+            </button>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              pata noi
+            </button>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              soch ke batata
+            </button>
+          </div>
+
+          <div class="lim flex flex-col justify-center items-center">
+            <svg
+              stroke="currentColor"
+              fill="none"
+              stroke-width="1.5"
+              viewBox="0 0 24 24"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-6 w-6"
+              height="1em"
+              width="1em"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M10.29 3.86L1.82 18a2 2 0 0 0 1.71 3h16.94a2 2 0 0 0 1.71-3L13.71 3.86a2 2 0 0 0-3.42 0z"
+              ></path>
+              <line x1="12" y1="9" x2="12" y2="13"></line>
+              <line x1="12" y1="17" x2="12.01" y2="17"></line>
+            </svg>
+            <div class="py-4"></div>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              Kami thodi hai
+            </button>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              bohot hai
+            </button>
+            <button
+              class="bg-gray-600 w-[13vw] text-sm hover:bg-gray-700 py-4 px-4 mx-4 my-2 rounded-md"
+            >
+              good bye
+            </button>
+          </div>
+        </div>
+
+        <div
+          class="input w-full text-center my-24 flex items-center justify-center flex-col"
+        >
+          <div class="buttonsvg pl-16 w-[50vw] flex">
+            <input
+              class="w-full p-4 bg-gray-600 rounded-md"
+              placeholder="Send a Message"
+              type="text"
+              name="text"
+              id="questionInput"
+            />
+
+            <button id="sendButton" class="relative -left-20 pl-10">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-4 w-4 mr-1"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>    
+        </div>
+      </div>
+
+      <div class="right2 w-full flex flex-col items-center h-fit">
+        <div
+          class="box1 m-auto py-7 flex justify-start w-[40vw] items-center space-x-6"
+        >
+          <img
+            class="w-9"
+            src="https://chat.openai.com/_next/image?url=https%3A%2F%2Flh3.googleusercontent.com%2Fa%2FAGNmyxa_a9M6k_RYXQha8eMOIDL6EaNReM0_CDX3hBi2%3Ds96-c&w=96&q=75"
+            alt=""
+          />
+          <div id="question2">Loading...</div>
+        </div>
+        <div
+          class="box2 bg-gray-600 py-7 flex justify-center w-full items-center"
+        >
+          <div class="box w-[40vw] flex justify-start space-x-6">
+            <img
+              class="w-9 h-9"
+              src="https://chat.openai.com/favicon.ico"
+              alt=""
+            />
+            <div class="flex space-y-4 flex-col">
+              <div id="question1">Loading...</div>
+              <div id="solution">Loading...</div>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="input pt-80 w-full text-center mt-52 flex items-center justify-center flex-col"
+        >
+          <div class="buttonsvg pl-16 w-[50vw] flex">
+            <input
+              class="w-full p-4 bg-gray-600 rounded-md"
+              placeholder="Send a Message"
+              type="text"
+              name="text"
+              id=""
+            />
+
+            <button class="relative -left-20 pl-10">
+              <svg
+                stroke="currentColor"
+                fill="none"
+                stroke-width="2"
+                viewBox="0 0 24 24"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="h-4 w-4 mr-1"
+                height="1em"
+                width="1em"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <line x1="22" y1="2" x2="11" y2="13"></line>
+                <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../static/js/script.js"></script>
+  </body>
+</html>
