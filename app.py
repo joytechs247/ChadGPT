@@ -190,14 +190,11 @@ import requests
 
 app = Flask(__name__)
 
-
-
-
-
 @app.route('/', methods=['GET', 'POST'])
 def process_sentence():
     if request.method == 'POST':
-        sentence = request.form.get('sentence', '')
+        print(request.form['sentence'])
+        sentence = request.form.get('sentence')
         if sentence:
             response = check_and_call(sentence)
             return render_template('response.html', response=response)
@@ -207,8 +204,7 @@ def process_sentence():
         # For a GET request, just display the form
         return render_template('index.html')
 
-if __name__ == '__main__':
-    app.run(debug=True)
+
 
 
 
